@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Pokédex</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js" defer></script>
+</head>
+<body>
+    <main class="main">
+        <header class="header">
+            <img class="logo" src="images/pokeball.png" alt="pokeball">
+            <div class="logo-wrapper">
+                <h1>Pokédex</h1>
+            </div>
+            <div class="search-container">
+                <div class="search-wrap">
+                    <img src="./images/search.svg" alt="" class="search-icon" id="search-icon" />
+                    <input type="text" class="search-input" id="search-input" placeholder="Search for a pokemon" />
+                    <img src="./images/cancel.png" alt="" class="search-close-icon" id="search-close-icon" />
+                </div>
+            </div>
+        </header>
+        <section class="pokemon-list">
+            <div class="container">
+                <div class="list-wrapper">
+                </div>
+                <div class="not-found-message">
+                    <h1>Pokémon not found</h1>
+                </div>
+            </div>
+        </section>
+        <section class="popup">
+            <div id="card">
+                
+            </div>
+            <h3>click anywhere on the screen to exit</h3>
+        </section>
+    </main>
+</body>
+</html>
