@@ -333,3 +333,33 @@ main{
 
     }
 }
+
+
+@media screen and (max-width: 768px){
+    main{
+        .header{
+            .logo-wrapper{
+                h1{
+                    font-size: 2rem;
+                }
+
+                .logo{
+                    width: 2rem;
+                }
+            }
+            .search-container{
+                .search-wrap{
+                    input{
+                        width: 15rem;
+                    }
+                }
+            }
+        }
+    }
+
+    .list-item{
+        img{
+            width: 10rem;
+        }
+    }
+}
