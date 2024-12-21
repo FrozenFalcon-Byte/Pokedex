@@ -173,9 +173,20 @@ let appendTypes = (types) => {
 
 let styleCard = (themeColor) => {
     card.style.setProperty('--theme-color', themeColor);
-    card.style.background = `radial-gradient(circle at right center, #fff 0%, #fff 70%, ${themeColor} 70%, ${themeColor} 100%)`;
+    if(window.innerWidth <= 768){
+        card.style.background = `radial-gradient(circle at bottom, #fff 0%, #fff 70%, ${themeColor} 70%, ${themeColor} 100%)`;
+    }else{
+        card.style.background = `radial-gradient(circle at right center, #fff 0%, #fff 70%, ${themeColor} 70%, ${themeColor} 100%)`;
+    }
 }
 
+
+window.addEventListener("resize", () => {
+    const themeColor = card.style.getPropertyValue("--theme-color");
+    if(themeColor){
+        styleCard(themeColor);
+    }
+})
 
 
 

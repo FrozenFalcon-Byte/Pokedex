@@ -338,14 +338,19 @@ main{
 @media screen and (max-width: 768px){
     main{
         .header{
+            padding: 1rem;
+            img{
+                width: 15rem;
+                /* height: 5rem; */
+                /* width: 9rem; */
+                object-fit: cover;
+            }
             .logo-wrapper{
                 h1{
                     font-size: 2rem;
                 }
 
-                .logo{
-                    width: 2rem;
-                }
+
             }
             .search-container{
                 .search-wrap{
@@ -357,9 +362,56 @@ main{
         }
     }
 
-    .list-item{
-        img{
-            width: 10rem;
+    .list-wrapper{
+        .list-item{
+            /* width: 15rem; */
+            /* height: 15rem; */
+            img{
+                width: 12rem;
+                height: 10rem;
+                object-fit: fill;
+            }
         }
     }
+
+    .popup{
+        padding: 2rem;
+        #card{
+            padding: 1.5rem;
+            flex-direction: column;
+            gap:0.2rem;
+            /* background: ; */
+            img{
+                width: 10rem;
+                height: 10rem;
+            }
+            .left-container{
+                gap: 1rem;
+                .types{
+                    gap: 0.5rem;
+                }
+                .stats{
+                    gap: 1rem;
+                    .stat-content{
+                        span{
+                            font-size: 1rem;
+                        }
+                    }
+                    .line{
+                        width: 2px;
+                    }
+                }
+            }
+        }
+        h3{
+            font-size: .8rem;
+        }
+    }
+
+    .pokemon-list{
+        min-height: 70dvh;
+        border-radius: 2rem;
+
+    }
+
 }
